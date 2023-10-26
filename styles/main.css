@@ -1,0 +1,166 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.draggable {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: absolute;
+  cursor: grab;
+}
+
+.drop-area {
+  width: 250px;
+  height: 450px;
+
+
+  border: 2px dashed #C4C4C4;
+}
+
+.grid-slot {
+  width: 100px;
+  height: 100px;
+  border: dashed 1px yellowgreen;
+  background-color: aquamarine;
+}
+
+.draggable-elements {
+  max-width: 210px;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.display-wrapper {
+  width: 100%;
+  height: 60px;
+  border-radius: 6px;
+  box-shadow: 4px 2px 4px 2px rgba(163, 160, 160, 0.5);
+}
+
+.display {
+  margin: auto;
+  padding: 5px;
+
+  width: 200px;
+  height: 50px;
+  background-color: #f3f4f6;
+  border-radius: 6px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+
+  font-size: 36px;
+  width: 800;
+  line-height: 44px;
+}
+
+.operations {
+  padding: 0;
+  list-style: none;
+
+  display: inline-flex;
+  gap: 4px;
+
+  
+}
+
+.arithmetic-operation {
+  display: block;
+  position: relative;
+
+  width: 50px;
+  height: 50px;
+  
+  border: 1px solid black;
+  border-radius: 6px;
+
+  .operation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.numbers-wrapper {
+  width: 100%;
+  padding: 5px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 50px;
+  gap: 8px;
+
+  box-shadow: 4px 2px 4px 2px rgba(163, 160, 160, 0.5);
+  border-radius: 4px;
+}
+
+.number {
+  position: relative;
+  
+  border-radius: 6px;
+  border: 1px solid #E2E3E5;
+
+  .digit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 14px;
+    width: 500;
+    line-height: 15px;
+  }
+}
+
+.number:nth-child(10) {
+    grid-column: 1 / span 2;
+}
+
+.btn-result-wrapper {
+    width: 100%;
+    height: 72px;
+
+    border-radius: 6px;
+    box-shadow: 4px 2px 4px 2px rgba(163, 160, 160, 0.5);
+}
+
+.btn-result {
+    width: 100%;
+    height: 100%;
+
+    border: none;
+    border-radius: 6px;
+    background-color: #5D5FEF;
+}
+
+
+
+
+
+.draggable-element {
+    cursor: grab;
+}
+
+
+
+
+
+
+.drag-handler {
+    position: absolute;
+}
